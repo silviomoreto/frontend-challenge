@@ -33,7 +33,7 @@ Feel free to use any other helper library although ideally the more code you wri
 
 ### Implementation requirements:
 
-- use either vanilla Javascript or one of the frameworks we use at Storecast(React / Vue.js)
+- use either vanilla Javascript or one of the frameworks (React / Vue.js / Angular)
 - use npm to manage dependencies, there is pre-initialized package.json included in this repo
 
 ### Feel free to:
@@ -49,5 +49,3 @@ Feel free to use any other helper library although ideally the more code you wri
 Optional: build the project and deploy (ie make it available as a static project) on 
 [Github Pages](https://pages.github.com/), otherwise please provide detailed instructions
 on how to start the project locally.
-
-Any questions please contact me via email (agon.bina AT storecast.de) :)
