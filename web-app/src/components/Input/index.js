@@ -7,7 +7,7 @@ const Input = (props) => {
   const { id, label, type, value, placeholder, handleInput, form } = props;
   return (
     <>
-      <Label>{label}</Label>
+      {!!label && <Label>{label}</Label>}
       <InputField
         form={form}
         id={id}

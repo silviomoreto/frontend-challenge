@@ -28,7 +28,7 @@ class Login extends Component {
       });
     } else {
       const user = {
-        email: "maria@gmail.com",
+        email: "maria@medway.com",
         password: "123",
       };
       if (email === user.email && password === user.password) {
