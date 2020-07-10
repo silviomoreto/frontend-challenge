@@ -7,6 +7,7 @@ import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Welcome from "../pages/Welcome";
 import CreateAccount from "../pages/CreateAccount";
+import Success from "../pages/Success";
 import NotFound from "../pages/NotFound";
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
@@ -28,6 +29,7 @@ const Routes = () => (
       <Route exact path="/" component={Home} />
       <Route path="/login" component={Login} />
       <Route path="/criar-conta" component={CreateAccount} />
+      <Route path="/sucesso" component={Success} />
       <PrivateRoute path="/bem-vindo" component={Welcome} />
       <Route path="*" component={NotFound} />
     </Switch>
