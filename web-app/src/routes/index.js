@@ -6,6 +6,7 @@ import { isAuthenticated } from "../services/auth";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Welcome from "../pages/Welcome";
+import CreateAccount from "../pages/CreateAccount";
 import NotFound from "../pages/NotFound";
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
@@ -26,8 +27,9 @@ const Routes = () => (
     <Switch>
       <Route exact path="/" component={Home} />
       <Route path="/login" component={Login} />
-      <Route path="*" component={NotFound} />
+      <Route path="/criar-conta" component={CreateAccount} />
       <PrivateRoute path="/bem-vindo" component={Welcome} />
+      <Route path="*" component={NotFound} />
     </Switch>
   </BrowserRouter>
 );

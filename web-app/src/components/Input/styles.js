@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const InputField = styled.input`
   width: 100%;
   height: 56px;
-  border: 1px solid #4adede;
+  border: ${(props) => (props.form ? "none" : "1px solid #4adede")};
   box-sizing: border-box;
   border-radius: 50px;
   font-size: 16px;
@@ -18,4 +18,13 @@ export const InputField = styled.input`
     line-height: 19px;
     color: #4adede;
   }
+`;
+
+export const Label = styled.label`
+  font-size: 16px;
+  line-height: 19px;
+  color: #4adede;
+  font-weight: 100;
+  margin-left: 15px;
+  margin-top: 24px;
 `;
