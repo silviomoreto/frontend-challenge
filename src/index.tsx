@@ -9,13 +9,11 @@ import { Provider } from "react-redux";
 import { createStore } from "redux";
 import { registerUser } from "./store/reducers";
 import { RegisterStoreState } from "./store/types";
+import { RegisterUserAction } from "./store/actions";
 
-const store = createStore<RegisterStoreState>(registerUser, {
-  name: "",
-  age: null,
-  email: "",
-  newsletter: false,
-});
+const store = createStore<RegisterStoreState, RegisterUserAction, any, any>(
+  registerUser
+);
 
 ReactDOM.render(
   <Provider store={store}>

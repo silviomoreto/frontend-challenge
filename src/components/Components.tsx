@@ -27,6 +27,7 @@ export const Card = styled.div`
   background-color: #ffffff;
 
   form {
+    display: grid;
     padding: 38px 65px 50px 65px;
   }
 `;
@@ -44,19 +45,36 @@ export const Logo = styled.div`
 export const Steps = styled.div`
   width: 120px;
   display: flex;
-  align-items: center;
   justify-content: center;
   margin-bottom: 10px;
+  position: relative;
 `;
 
 export const Divider = styled.div`
   height: 1px;
-  margin: 0 3px;
+  margin-top: 12px;
   flex: 1;
   background-color: #707070;
 `;
 
-export const Step = styled.div<{ active: boolean }>`
+export const Step = styled.div`
+  display: grid;
+  grid-row-gap: 5px;
+  justify-items: center;
+
+  span: {
+    font-size: 12px;
+    font-weight: 300;
+  }
+`;
+
+export const StepsItem = styled.div`
+  display: grid;
+  grid-row-gap: 5px;
+  justify-items: center;
+`;
+
+export const Circle = styled.div<{ active: boolean }>`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,6 +93,42 @@ export const Step = styled.div<{ active: boolean }>`
     `}
 `;
 
-export const Title = styled.h1<{ active: boolean }>`
-  color: ${(props) => (props.active ? "red" : "blue")};
+export const Header = styled.div`
+  display: grid;
+  justify-items: center;
+  margin-bottom: 40px;
+`;
+
+export const Title = styled.h1`
+  font-size: 22px;
+  margin: 0;
+  font-weight: normal;
+`;
+
+export const Subtitle = styled.p`
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0;
+`;
+
+export const GridForm = styled.div`
+  display: grid;
+  grid-row-gap: 30px;
+  margin-bottom: 60px;
+`;
+
+export const Button = styled.button`
+  background-color: ${primaryColor};
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+`;
+
+export const SuccessBlock = styled.div`
+  display: grid;
+  justify-items: center;
+  padding: 38px 65px 50px 65px;
 `;
